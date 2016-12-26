@@ -1,0 +1,28 @@
+S -> statement-list
+statement-list -> statement statement-list
+statement -> while condition statement-list end
+statement -> if condition statement-list end
+statement -> for (id equal number , condition , id iterate) statement-list end
+statement -> id equal cases
+statement -> op id equal cases math cases
+statement -> print id
+statement -> scan id 
+statement -> block id statement-list end 
+statement -> call id 
+statement-list-> ''
+condition -> id operator number
+operator -> <
+operator -> ==
+operator -> <=
+operator -> >=
+operator -> !=
+operator -> >
+cases -> id
+cases -> number
+iterate -> ++
+iterate -> --
+equal -> =
+math -> +
+math -> -
+math -> *
+math -> \
